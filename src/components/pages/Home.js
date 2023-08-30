@@ -14,7 +14,6 @@ export default function Home() {
                     <Typography variant = 'h1' sx={{ color: 'transparent'}} >SHIFFLET</Typography>
                 </Grid>
             </Grid>
-            
         </Grid>
     )
 }

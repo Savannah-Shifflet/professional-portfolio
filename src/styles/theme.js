@@ -1,4 +1,5 @@
 import {createTheme, responsiveFontSizes } from '@mui/material';
+import { hover } from '@testing-library/user-event/dist/hover';
 
 const theme = createTheme({
     palette: {
@@ -24,7 +25,18 @@ const theme = createTheme({
         }
     },
     components: {
-
+        MuiLink: {
+            styleOverrides: {
+                root:{
+                    fontSize: '1.1rem',
+                    textDecoration: 'none',
+                    margin: '1rem',
+                    "&:hover":{
+                        textShadow: '#E29263 -1.2px 0.3px',
+                    }
+                }
+            }
+        }
     },
     typography: {
         h1: {
