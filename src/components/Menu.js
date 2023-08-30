@@ -4,7 +4,7 @@ import Link from '@mui/material/Link';
 
 
 export default function Menu() {
-    // TODO: resize menu for smaller screens
+    // TODO: resize menu for smaller screens - useMediaQuery hook for conditional rendering
     // const dimensions = {
     //     height: window.innerHeight,
     //     width: window.innerWidth

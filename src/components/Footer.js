@@ -33,8 +33,13 @@ export default function Footer() {
             {/* TODO: add copy email functionality with snackbar notification or tooltip that email copied */}
             <ClickAwayListener onClickAway={handleTooltipClose}>
                     <Tooltip 
-                        PopperProps={{
-                            disablePortal: true,
+                        componentsProps={{
+                            tooltip: {
+                                sx: {bgcolor: 'accent.main', color: 'primary.main', fontWeight: 'bold'}
+                            },
+                            arrow: {
+                                sx: {color: 'accent.main'}
+                            }
                         }}
                         onClose={handleTooltipClose}
                         open={open}

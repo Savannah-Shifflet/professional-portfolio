@@ -67,6 +67,9 @@ const theme = createTheme({
             fontWeight: 'bold',
             color: 'primary',
             lineHeight: 1
+        },
+        h2: {
+            fontSize: '3rem'
         }
     }
 })
