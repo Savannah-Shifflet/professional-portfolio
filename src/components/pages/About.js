@@ -1,5 +1,8 @@
 import React from 'react';
+import Header from '../Header';
 
 export default function About() {
-    return <div>ABOUT PAGE</div>
+    return <div>ABOUT PAGE
+        <Header />
+    </div>
 }
