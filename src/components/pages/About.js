@@ -1,8 +1,13 @@
 import React from 'react';
 import Header from '../Header';
+import { Typography, Grid, Box, Link } from '@mui/material';
 
 export default function About() {
-    return <div>ABOUT PAGE
+    return (
+    <div>
         <Header />
-    </div>
+        <Box>
+
+        </Box>
+    </div>)
 }
