@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography, Grid, Box, Slide } from '@mui/material';
+import { Typography, Grid, Box, Slide, Fade } from '@mui/material';
 import headshot from '../../../images/headshot.png'
 import './about.css'
 import AboutBody from './AboutBody';
@@ -32,14 +32,16 @@ export default function AboutHeader() {
                 </Grid>
             </Slide>
             {/* Headshot with art background */}
-            <Grid item container justifyContent={'space-around'} xs={8} md={4.5}>
-                    <Grid item container sx ={{height: '14rem', width: '15rem', position: 'relative', mr: '10%'}} justifyContent={'center'}>
-                        <Box sx={{bgcolor:'pink.main', position: 'absolute', bottom: '0', left: '200', width: '100%', height: '70%'}} md={12}>                        
-                        </Box>
-                    
-                        <img src = {headshot} alt ='Headshot of Savannah Shifflet' style={imgStyles.img} className='headshot'/>
-                    </Grid> 
-            </Grid>
+            <Fade in='true' timeout={700}>
+                <Grid item container justifyContent={'space-around'} xs={8} md={4.5}>
+                        <Grid item container sx ={{height: '14rem', width: '15rem', position: 'relative', mr: '10%'}} justifyContent={'center'}>
+                            <Box sx={{bgcolor:'pink.main', position: 'absolute', bottom: '0', left: '200', width: '100%', height: '70%'}} md={12}>                        
+                            </Box>
+                        
+                            <img src = {headshot} alt ='Headshot of Savannah Shifflet' style={imgStyles.img} className='headshot'/>
+                        </Grid> 
+                </Grid>
+            </Fade>
             <AboutBody/>
         </Grid>
     )
