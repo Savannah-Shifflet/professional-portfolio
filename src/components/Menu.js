@@ -21,14 +21,10 @@ export default function Menu() {
     // return <div>`the width is ${dimensions.width} and the height is ${dimensions.height}`</div>;
 
     return (
-        <div>
-            <Box height = '100vh' alignItems = 'center' sx = {{position: 'fixed', right: 12, display:'flex'}} >
-                <Box sx = {{writingMode: 'vertical-rl', textOrientation: 'revert', transform: 'rotate(180deg)'}}>
-                    <Link variant='nav' href="/about-me" >About Me</Link>
-                    <Link variant='nav' href="/portfolio" >Portfolio</Link>
-                    <Link variant='nav' href="/resume" >Resume</Link>
-                </Box>
+            <Box sx = {{writingMode: 'vertical-rl', textOrientation: 'revert', transform: 'rotate(180deg)'}}>
+                <Link variant='nav' href="/about-me" >About Me</Link>
+                <Link variant='nav' href="/portfolio" >Portfolio</Link>
+                <Link variant='nav' href="/resume" >Resume</Link>
             </Box>
-        </div>
 )
 }

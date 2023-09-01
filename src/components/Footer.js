@@ -21,7 +21,7 @@ export default function Footer() {
     }
 
     return (
-        <Box sx={{ position: 'fixed', bottom: 8, left: 8 }}>
+        <Box >
             <IconButton sx={{m:1}} target='_blank' rel='noreferrer' href = 'https://www.linkedin.com/in/savannah-shifflet/'>
                 <LinkedInIcon color='primary'/>
             </IconButton>
