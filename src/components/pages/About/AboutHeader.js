@@ -5,7 +5,7 @@ import './about.css'
 import AboutBody from './AboutBody';
 
 // TODO: Add circles behind headshot
-// TODO: Make headshot fade in/transition
+// TODO: add three traits - accordion? 
 
 export default function AboutHeader() {
     const imgStyles = {

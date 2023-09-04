@@ -4,7 +4,7 @@ import Menu from './components/Menu';
 import Footer from "./components/Footer";
 import {Routes, Route } from "react-router-dom";
 import Home from './components/pages/Home';
-import Portfolio from './components/pages/Portfolio';
+import Portfolio from './components/pages/Portfolio'
 import About from './components/pages/About';
 import Resume from './components/pages/Resume';
 import { Box, Grid } from "@mui/material";
@@ -29,7 +29,6 @@ function App() {
                     </Routes>
                 </Grid>
                 <Grid item xs={12} lg={12} sx={{ alignSelf: 'flex-end' }}>
-                    {/* <Box sx={{position: 'absolute', bottom: 8, left: 8}}> */}
                     <Footer  />
                 </Grid>
             </Grid>

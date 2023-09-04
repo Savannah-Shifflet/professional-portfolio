@@ -31,6 +31,7 @@ const theme = createTheme({
                 {
                     props: { variant: 'nav'},
                     style: {
+                        fontFamily: 'nunito',
                         fontSize: '1.1rem',
                         textDecoration: 'none',
                         margin: '1rem',
@@ -69,7 +70,8 @@ const theme = createTheme({
             lineHeight: 1
         },
         h2: {
-            fontSize: '3rem'
+            fontSize: '3rem',
+            fontFamily: 'exo'
         }
     }
 })
