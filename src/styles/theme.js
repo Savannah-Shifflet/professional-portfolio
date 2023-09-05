@@ -33,6 +33,7 @@ const theme = createTheme({
                     style: {
                         fontFamily: 'nunito',
                         fontSize: '1.1rem',
+                        fontWeight: 'normal',
                         textDecoration: 'none',
                         margin: '1rem',
                         "&:hover":{
@@ -61,6 +62,7 @@ const theme = createTheme({
                         background: '#E29263',
                         color: '#344E41',
                         fontFamily: 'nunito',
+                        fontWeight: 'bold',
                         "&:hover":{
                             background: 'rgba(226, 146, 99, 0.5)',
                         }
@@ -71,6 +73,7 @@ const theme = createTheme({
         }
     },
     typography: {
+        // for home page
         h1: {
             fontFamily:  [ '"Overpass"', 'sans-serif'].join(','),
             fontSize: '4rem',
@@ -78,6 +81,7 @@ const theme = createTheme({
             color: 'primary',
             lineHeight: 1
         },
+        // for Savannah Shifflet header on pages
         h4: {
             fontFamily:  [ '"Overpass"', 'sans-serif'].join(','),
             fontSize: '2rem',
@@ -85,12 +89,20 @@ const theme = createTheme({
             color: 'primary',
             lineHeight: 1
         },
+        // for page headers
         h2: {
             fontSize: '3rem',
             fontFamily: 'exo'
         },
+        // Subtitles - 'my strengths'
         h3: {
-            fontFamily: 'exo'
+            fontFamily: 'exo',
+            fontSize: '2rem'
+        },
+        body1: {
+            fontFamily: 'nunito',
+            fontSize: '1.2rem',
+            fontWeight: 'bold'
         }
     }
 })

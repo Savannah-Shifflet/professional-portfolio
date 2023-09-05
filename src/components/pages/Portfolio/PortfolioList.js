@@ -5,7 +5,7 @@ import DnD from '../../../assets/DnD.gif';
 
 const pieces = [
     {
-        title: 'Blob Mania: Multiplayer Game',
+        title: 'Blob Mania',
         media: Blob,
         github: 'https://github.com/Savannah-Shifflet/blob-mania',
         deployed: 'https://blob-mania-322037286e7b.herokuapp.com/',
