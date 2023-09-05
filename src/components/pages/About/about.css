@@ -3,3 +3,12 @@
         height: 100%;
     }
 }
+
+@media (max-width: 900px){
+    .arrow {
+        display: none; 
+    }
+    .passion {
+        margin-left: 10%;
+    }
+}

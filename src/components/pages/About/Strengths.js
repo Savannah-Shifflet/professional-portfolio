@@ -7,7 +7,7 @@ export default function Strengths() {
     const strengths = [
         {
             title: 'Scrappy',
-            description: "Many supervisors and co-workers have told me I am 'scrappy.' With this one word, it shows I have consistently demonstrated resourcefulness, tenacity, self-reliance, and adaptability in a variety of circumstances."
+            description: "Many have told me I am 'scrappy.' With this one word, it shows I have consistently demonstrated resourcefulness, tenacity, self-reliance, and adaptability in a variety of circumstances."
         },
         {
             title: 'Human Centered',
@@ -23,7 +23,7 @@ export default function Strengths() {
         <Grid container item xs={12} sx={{ ml: '10%', mr: '10%', mt: '0.5%' }} justifyContent={'space-between'}>
             {strengths.map((strength) => {
                 return(
-                    <Grid item xs={12} md={4} sx ={{pt: '0.2em', pb: '1em', px: '0.9em'}}>
+                    <Grid item xs={12} md={4} sx ={{pt: '0.2em', pb: '1em', pr:'1.4em'}}>
                         <Typography variant='h5' sx={{padding: '2px', fontWeight: 'bold'}}>{strength.title}</Typography>
                         <Divider sx={{bgcolor: 'accent.main'}} />
                         <Typography variant='body1'>{strength.description}</Typography>
