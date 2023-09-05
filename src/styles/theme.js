@@ -52,6 +52,22 @@ const theme = createTheme({
                     }
                 }
         ]
+        },
+        MuiButton: {
+            variants: [
+                {
+                    props: { variant: 'project', color: 'primary' },
+                    style: {
+                        background: '#E29263',
+                        color: '#344E41',
+                        fontFamily: 'nunito',
+                        "&:hover":{
+                            background: 'rgba(226, 146, 99, 0.5)',
+                        }
+                        
+                    }
+                }
+            ]
         }
     },
     typography: {
@@ -71,6 +87,9 @@ const theme = createTheme({
         },
         h2: {
             fontSize: '3rem',
+            fontFamily: 'exo'
+        },
+        h3: {
             fontFamily: 'exo'
         }
     }

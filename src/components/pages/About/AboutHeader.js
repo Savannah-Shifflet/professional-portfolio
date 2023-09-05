@@ -1,6 +1,6 @@
 import React from 'react';
 import { Typography, Grid, Box, Slide, Fade } from '@mui/material';
-import headshot from '../../../images/headshot.png'
+import headshot from '../../../assets/headshot.png'
 import './about.css'
 import AboutBody from './AboutBody';
 

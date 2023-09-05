@@ -2,6 +2,9 @@ import React from 'react';
 import Header from '../../Header';
 import { Grid, Typography } from '@mui/material';
 import PortfolioList from './PortfolioList';
+import PortfolioHeader from './PortfolioHeader';
+
+
 
 export default function Portfolio() {
     return (
@@ -10,7 +13,8 @@ export default function Portfolio() {
                 <Header />
             </Grid>
             <Grid item lg={12} >
-                <Typography variant='h2' textAlign={'center'}>My Work</Typography>
+                <PortfolioHeader/>
+                
                 <PortfolioList />
             </Grid>
         </Grid>

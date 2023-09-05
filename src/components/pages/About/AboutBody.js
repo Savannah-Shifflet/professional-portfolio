@@ -73,7 +73,8 @@ export default function AboutBody() {
 
 // Three categories/traits
 // 1. Scrappy
-// 2. 
+// 2. human centered
+// 3. data-driven 
 
 // one template for three categories with a fun arrow and then animated toggle to view information
 
