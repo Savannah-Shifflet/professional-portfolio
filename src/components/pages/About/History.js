@@ -23,7 +23,7 @@ export default function History() {
         setExpanded(!expanded);
     };
     return (
-        <Card raised sx={{ ml: '10%', mr: '10%' }}>
+        <Card raised sx={{ ml: '10%', mr: '10%', mt: '2.5%' }}>
             <CardHeader
                 action={
                     <ExpandMore

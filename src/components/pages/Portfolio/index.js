@@ -3,7 +3,7 @@ import Header from '../../Header';
 import { Grid, Typography } from '@mui/material';
 import PortfolioList from './PortfolioList';
 import PortfolioHeader from './PortfolioHeader';
-
+import { completedPieces } from './data/CompletedPieces';
 
 
 export default function Portfolio() {
@@ -12,10 +12,10 @@ export default function Portfolio() {
             <Grid container item xs={12} >
                 <Header />
             </Grid>
-            <Grid item lg={12} >
+            <Grid item xs={12} >
                 <PortfolioHeader/>
                 
-                <PortfolioList />
+                <PortfolioList pieces={completedPieces}/>
             </Grid>
         </Grid>
     )
