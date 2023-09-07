@@ -3,7 +3,7 @@ import { Typography, Grid, Box, Link, Button } from '@mui/material';
 import Divider from '@mui/material/Divider';
 
 
-// TODO: figure out how to format title of whole page
+
 // TODO: add svg decorations
 
 export default function PortfolioList({ pieces }) {
@@ -54,10 +54,10 @@ export default function PortfolioList({ pieces }) {
                     {/* Links to the piece's github and deployed project are second row */}
                     <Grid item container xs ={11} md={12}sx={{my:2}} justifyContent='space-between'>
                         <Grid container item xs ={5} md={6} justifyContent='center'>
-                            <Button target = "_blank" href={piece.github} variant="project">GitHub Repository</Button>
+                            <Button target = "_blank" href={piece.github} variant="project" sx={{textAlign: 'center'}}>GitHub Repository</Button>
                         </Grid>
                         <Grid container item xs ={5} md={6} justifyContent='center'>
-                            <Button variant='project' target = "_blank" href={piece.deployed} >Deployed Project</Button>
+                            <Button variant='project' target = "_blank" href={piece.deployed} sx={{textAlign: 'center'}}>Deployed Project</Button>
                         </Grid>
                     </Grid>
                     

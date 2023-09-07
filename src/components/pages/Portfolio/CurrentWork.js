@@ -4,6 +4,8 @@ import Collapse from '@mui/material/Collapse';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { styled } from '@mui/material/styles';
 import IconButton from '@mui/material/IconButton';
+import PortfolioList from './PortfolioList';
+import { currentPieces } from './data/CurrentPieces';
 
 const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
@@ -23,7 +25,7 @@ export default function CurrentWork() {
         setExpanded(!expanded);
     };
     return (
-        <Card raised sx={{ ml: '10%', mr: '10%', mt: '2.5%' }}>
+        <Card raised>
             <CardHeader
                 action={
                     <ExpandMore
@@ -36,12 +38,12 @@ export default function CurrentWork() {
                         <ExpandMoreIcon sx = {{color: 'background.default'}} />
                     </ExpandMore>
                 }
-                sx={{bgcolor: 'secondary.main', color: 'background.default', fontFamily: 'exo'}}
-                title="Work in Progress"
+                sx={{bgcolor: 'accent.main', color: 'background.default', fontFamily: 'exo'}}
+                title="Projects in progress"
                 titleTypographyProps={{variant: 'h3' }} />
             <Collapse in={expanded} timeout="auto" unmountOnExit>
-                <CardContent sx= {{bgcolor: 'secondary.main', opactiy: '0.5'}}>
-                    
+                <CardContent sx= {{bgcolor: 'background.default'}}>
+                    <PortfolioList pieces={currentPieces}/>
                 </CardContent>
             </Collapse>
 
