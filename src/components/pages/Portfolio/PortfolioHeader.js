@@ -2,7 +2,6 @@ import React from 'react';
 import './style.css';
 import { Grid, Typography } from '@mui/material';
 
-// TODO: figure out how to format title of whole page
 const titleOpen = '< '
 const titleClose = ' />'
 const title = 'My Work'

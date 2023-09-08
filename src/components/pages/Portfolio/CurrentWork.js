@@ -7,6 +7,9 @@ import IconButton from '@mui/material/IconButton';
 import PortfolioList from './PortfolioList';
 import { currentPieces } from './data/CurrentPieces';
 
+// TODO: Add gif and summary for portfolio site
+// TODO: Add POS system 
+
 const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
     return <IconButton {...other} />;

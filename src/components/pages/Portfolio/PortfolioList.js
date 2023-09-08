@@ -25,6 +25,11 @@ export default function PortfolioList({ pieces }) {
                 if(index === pieces.length-1){
                     isLast = true;
                 }
+
+                let disabled = false;
+                if(piece.disabled){
+                    disabled=true;
+                }
                 return(
                 <Grid item container md={9} xs ={11} key={piece.title} sx={{m: 3}}>
                     {/* gif, title, summary take up one row */}
@@ -57,7 +62,8 @@ export default function PortfolioList({ pieces }) {
                             <Button target = "_blank" href={piece.github} variant="project" sx={{textAlign: 'center'}}>GitHub Repository</Button>
                         </Grid>
                         <Grid container item xs ={5} md={6} justifyContent='center'>
-                            <Button variant='project' target = "_blank" href={piece.deployed} sx={{textAlign: 'center'}}>Deployed Project</Button>
+                            {disabled?<Button variant='project' target = "_blank" href={piece.deployed} disabled sx={{textAlign: 'center'}}>Coming soon...</Button>: <Button variant='project' target = "_blank" href={piece.deployed} sx={{textAlign: 'center'}}>Deployed Project</Button>
+                            }
                         </Grid>
                     </Grid>
                     
