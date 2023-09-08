@@ -1,6 +1,6 @@
 // import components 
 import React from "react";
-import Menu from './components/Menu';
+import Nav from './components/Nav';
 import Footer from "./components/Footer";
 import {Routes, Route } from "react-router-dom";
 import Home from './components/pages/Home';
@@ -15,9 +15,7 @@ function App() {
     return(
         <BrowserRouter>
             <Grid container sx={{minHeight: 'fit-content'}}>
-                <Grid item height = '100vh' alignItems = 'center' sx = {{position: 'fixed', right: 12, display:'flex', zIndex: '2000'}} >
-                    <Menu/>
-                </Grid>
+                <Nav/>
                 <Grid item xs={12} lg={12}>
                     <Routes>
                         <Route path = '/' >
