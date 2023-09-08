@@ -42,7 +42,7 @@ export default function AboutHeader() {
                         </Grid> 
                 </Grid>
             </Fade>
-            <AboutBody/>
+            
         </Grid>
     )
 }

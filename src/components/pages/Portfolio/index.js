@@ -35,7 +35,7 @@ export default function Portfolio() {
                 {/* Expandable card with current projects */}
                 <Grid item container xs ={12} justifyContent={'center'} >
                     <Grid item md={9} xs ={11} sx={{mt:'2.5%'}}>
-                    <CurrentWork/>
+                        <CurrentWork/>
                     </Grid>
                 </Grid>
             </Grid>

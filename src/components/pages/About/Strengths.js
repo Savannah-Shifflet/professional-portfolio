@@ -20,7 +20,7 @@ export default function Strengths() {
     ];
 
     return (
-        <Grid container item xs={12} sx={{ ml: '10%', mr: '10%', mt: '0.5%' }} justifyContent={'space-between'}>
+        <Grid container item xs={12} sx={{ mt: '0.5%' }} justifyContent={'space-between'}>
             {strengths.map((strength) => {
                 return(
                     <Grid item xs={12} md={4} sx ={{pt: '0.2em', pb: '1em', pr:'1.4em'}}>

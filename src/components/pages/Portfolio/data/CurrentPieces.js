@@ -44,7 +44,7 @@ export const currentPieces = [
         media: portfolio,
         github: 'https://github.com/Savannah-Shifflet/professional-portfolio',
         deployed: 'savannahshifflet.com',
-        summary: 'My website is a continuous work in progress as I build out more features. A front-end React-based web application that utilizes Material UI to bring my design to life.',
+        summary: 'A front-end React-based web application that utilizes Material UI to bring my design to life. My website is a continuous work in progress as I build out more features.',
         disabled: true,
         technology: [
             { source: 'https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge&logo=JavaScript&logoColor=black',
