@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
 import Pdf from '../assets/Savannah_Shifflet_Resume.pdf'
 import useMediaQuery from '@mui/material/useMediaQuery';
-import { Typography, Grid, Button } from '@mui/material';
+import { Grid, Button } from '@mui/material';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 
@@ -15,7 +15,7 @@ export default function Nav() {
     const mobile = useMediaQuery('(max-width:900px)');
     
     // Menu 
-    const [anchorEl, setAnchorEl] = React.useState(null);
+    const [anchorEl, setAnchorEl] = useState(null);
     const open = Boolean(anchorEl);
     const handleClick = (event) => {
         setAnchorEl(event.currentTarget);

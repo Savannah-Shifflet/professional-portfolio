@@ -7,7 +7,7 @@ import Home from './components/pages/Home';
 import Portfolio from './components/pages/Portfolio'
 import About from './components/pages/About';
 
-import { Box, Grid } from "@mui/material";
+import { Grid } from "@mui/material";
 import { BrowserRouter } from 'react-router-dom';
 
 // style = {{minHeight:'100vh', position: 'relative'}}
