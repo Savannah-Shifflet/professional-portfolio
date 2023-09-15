@@ -1,11 +1,12 @@
 import React from 'react';
 import Header from '../../Header';
-import { Grid, Typography } from '@mui/material';
 import PortfolioList from './PortfolioList';
 import PortfolioHeader from './PortfolioHeader';
 import { completedPieces } from './data/CompletedPieces';
 import CurrentWork from './CurrentWork';
 import Divider from '@mui/material/Divider';
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
 
 
 export default function Portfolio() {

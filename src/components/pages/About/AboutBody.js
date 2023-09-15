@@ -1,13 +1,15 @@
 import React from 'react';
-import { Typography, Grid, Slide } from '@mui/material';
 import Strengths from './Strengths';
 import History from './History'; 
-import './about.css'
+import './about.css';
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
+import Slide from '@mui/material/Slide';
 
 export default function AboutBody() {
     return (
-        <Slide direction='up' in= 'true' timeout={{enter: 1000 }}>
-            <Grid container xs={12} justifyContent='center'>
+        <Slide direction='up' in={true} timeout={{enter: 1000 }}>
+            <Grid container justifyContent='center'>
                 <Grid item xs={10}>
                     <Typography variant='h3' sx={{ mt: '2.5%' }}>
                         My passion: bridging science and logic with real-world complexities
@@ -41,35 +43,3 @@ export default function AboutBody() {
         
     )
 }
-
-// Three categories/traits
-// 1. Scrappy
-// 2. human centered
-// 3. data-driven 
-
-// one template for three categories with a fun arrow and then animated toggle to view information
-
-// Page sections: 
-// 1. short professional interest paragraph,
-// traits- My Strengths: 
-// 2. in collapse: A brief history,
-// 3. My daily life, 
-
-
-// <Grid container item xs={12} sx={{ ml: '10%', mr: '10%', mt: '0.5%' }} justifyContent={'space-between'}>
-{/* <Grid item xs={12} md={4} sx ={{pt: '0.2em', pb: '1em', px: '0.9em'}}>
-<Typography variant='h5' sx={{padding: '2px', fontWeight: 'bold'}}>Scrappy</Typography>
-<Divider sx={{bgcolor: 'accent.main'}} />
-<Typography variant='body1'>Many supervisors and co-workers have told me I am 'scrappy.' With this one word, it shows I have consistently demonstrated resourcefulness, tenacity, self-reliance, and adaptability in a variety of circumstances. </Typography>
-</Grid>
-<Grid item xs={12} md={4} sx ={{pt: '0.2em', pb: '1em', px: '0.9em'}}>
-<Typography variant='h5' sx={{padding: '2px'}} >Human-Centered</Typography>
-<Divider sx={{bgcolor: 'accent.main'}} />
-<Typography variant='body1'>With a background in social work, I have training and real-world experience in understanding human behavior, social dynamics, and the needs of diverse populations.</Typography>
-</Grid>
-<Grid item xs={12} md={4} sx ={{pt: '0.2em', pb: '1em', px: '0.9em'}}>
-<Typography variant='h5' sx={{padding: '2px'}}>Data-Driven</Typography>
-<Divider sx={{bgcolor: 'accent.main'}} />
-<Typography variant='body1'>My time in academia has instilled rigorous research and data methodologies. I am passionate about translating real-world, unstructured data into impact.</Typography>
-</Grid>
-</Grid> */}

@@ -3,15 +3,16 @@ import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
 import Pdf from '../assets/Savannah_Shifflet_Resume.pdf'
 import useMediaQuery from '@mui/material/useMediaQuery';
-import { Grid, Button } from '@mui/material';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
+import Grid from '@mui/material/Grid';
+import Button from '@mui/material/Button';
 
 
 // TODO: add resume page as well 
 
 export default function Nav() {
-    // TODO: resize menu for smaller screens - useMediaQuery hook for conditional rendering
+    //resize menu for smaller screens - useMediaQuery hook for conditional rendering
     const mobile = useMediaQuery('(max-width:900px)');
     
     // Menu 
@@ -49,7 +50,7 @@ export default function Nav() {
                     'aria-labelledby': 'basic-button',
                     }}
                 >
-                    <MenuItem onClick={handleClose}><Link variant='nav' sx={{m:0}} href="/about-me" >About Me</Link></MenuItem>
+                    <MenuItem onClick={handleClose} ><Link variant='nav' sx={{m:0}} href="/about-me" >About Me</Link></MenuItem>
                     <MenuItem onClick={handleClose}><Link variant='nav' sx={{m:0}} href="/portfolio" >Portfolio</Link></MenuItem>
                     <MenuItem onClick={handleClose}><Link variant='nav' sx={{m:0}} target = "_blank" href={Pdf} >Resume</Link></MenuItem>
                 </Menu>

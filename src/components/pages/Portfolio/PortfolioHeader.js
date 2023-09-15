@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.css';
-import { Grid, Typography } from '@mui/material';
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
 
 const titleOpen = '< '
 const titleClose = ' />'

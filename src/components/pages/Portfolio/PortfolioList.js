@@ -1,8 +1,8 @@
 import React from 'react';
-import { Typography, Grid, Box, Link, Button } from '@mui/material';
 import Divider from '@mui/material/Divider';
-
-
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
 
 // TODO: add svg decorations
 
@@ -50,7 +50,7 @@ export default function PortfolioList({ pieces }) {
                     <Grid container item xs ={12} sx={{mt:'2.5%'}}>
                             {piece.technology.map((tech)=>{
                                 return(
-                                    <Grid item sx={{height:'fit-content'}}>
+                                    <Grid item sx={{height:'fit-content'}} key={tech.source}>
                                         <img key= {tech.alt} src={tech.source} alt = {tech.alt} style ={styles.badge}/>
                                     </Grid>)
                             })}

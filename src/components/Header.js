@@ -1,7 +1,8 @@
 import React from 'react';
-import { Typography, Grid, Box, Link } from '@mui/material';
-// sx={{ position: 'absolute', top: 20, left: 15 }}
-// justifyContent="center" alignItems="center"
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
+import Link from '@mui/material/Link';
+
 export default function Home() {
     return (
             <Grid item container xs={12}>

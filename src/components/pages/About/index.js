@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../../Header';
 import AboutHeader from './AboutHeader';
 import AboutBody from './AboutBody';
-import { Grid } from '@mui/material';
+import Grid from '@mui/material/Grid';
 
 export default function About() {
     return (

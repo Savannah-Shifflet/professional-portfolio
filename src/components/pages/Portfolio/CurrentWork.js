@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography } from '@mui/material';
+import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import PortfolioList from './PortfolioList';
 import { currentPieces } from './data/CurrentPieces';
@@ -7,8 +7,6 @@ import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 
-// TODO: Add gif and summary for portfolio site
-// TODO: Add POS system 
 
 export default function CurrentWork() {
 

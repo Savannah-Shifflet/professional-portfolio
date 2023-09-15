@@ -1,6 +1,8 @@
 import React from 'react';
-import { Typography, Grid } from '@mui/material';
 import Divider from '@mui/material/Divider';
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
+
 
 export default function Strengths() {
 
@@ -23,11 +25,11 @@ export default function Strengths() {
         <Grid container item xs={12} sx={{ mt: '0.5%' }} justifyContent={'space-between'}>
             {strengths.map((strength) => {
                 return(
-                    <Grid item xs={12} md={4} sx ={{pt: '0.2em', pb: '1em', pr:'1.4em'}}>
+                    <Grid item key={strength.title} xs={12} md={4} sx ={{pt: '0.2em', pb: '1em', pr:'1.4em'}}>
                         <Typography variant='h5' sx={{padding: '2px', fontWeight: 'bold'}}>{strength.title}</Typography>
                         <Divider sx={{bgcolor: 'accent.main'}} />
                         <Typography variant='body1'>{strength.description}</Typography>
-            </Grid>
+                    </Grid>
                 )
             })}
         </Grid>
