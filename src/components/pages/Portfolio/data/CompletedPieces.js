@@ -1,6 +1,6 @@
-import Blob from '../../../../assets/blob_mania.gif';
-import DnD from '../../../../assets/DnD.gif';
-import sidekick from '../../../../assets/sidekick.gif';
+import Blob from '../../../../assets/blob_mania.mp4';
+import DnD from '../../../../assets/DnD.mp4';
+import sidekick from '../../../../assets/sidekick.mp4';
 
 export const completedPieces = [
     {

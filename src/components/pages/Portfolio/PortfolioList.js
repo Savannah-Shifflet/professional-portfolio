@@ -11,7 +11,8 @@ export default function PortfolioList({ pieces }) {
         gif:{
             width: '100%',
             height: '100%',
-            boxShadow: '#FFDDD2 -0.7em -0.7em'
+            boxShadow: '#FFDDD2 -0.7em -0.7em',
+            marginTop: '-9px',
         },
         badge: {
             margin: 3
@@ -34,7 +35,7 @@ export default function PortfolioList({ pieces }) {
                 <Grid item container md={9} xs ={11} key={piece.title} sx={{m: 3}}>
                     {/* gif, title, summary take up one row */}
                     <Grid item xs={11} md={7}>
-                        <img src={piece.media} alt ='gif of portfolio piece' style ={styles.gif}/>
+                        <video autoPlay loop muted playsInline src={piece.media} style ={styles.gif}></video>
                     </Grid>
                     <Grid container item xs = {11} md={5}  justifyContent='flex-end'>
                         <Grid item xs={11} sx={{height: 'fit-content'}}>
@@ -43,7 +44,7 @@ export default function PortfolioList({ pieces }) {
                         <Grid item xs={11}>
                             <Typography variant ='body1'>{piece.summary}</Typography>
                         </Grid>
-                        
+
                     </Grid>
 
                     {/* list of technology badges used for the project */}

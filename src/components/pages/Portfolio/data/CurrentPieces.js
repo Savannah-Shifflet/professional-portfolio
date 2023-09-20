@@ -1,4 +1,4 @@
-import portfolio from '../../../../assets/portfolio.gif';
+import portfolio from '../../../../assets/portfolio.mp4';
 
 
 export const currentPieces = [
