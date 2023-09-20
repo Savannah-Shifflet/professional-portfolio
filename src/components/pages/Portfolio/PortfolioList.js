@@ -3,6 +3,7 @@ import Divider from '@mui/material/Divider';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import Link from '@mui/material/Link';
 
 // TODO: add svg decorations
 
@@ -10,9 +11,8 @@ export default function PortfolioList({ pieces }) {
     const styles = {
         gif:{
             width: '100%',
-            height: '100%',
-            boxShadow: '#FFDDD2 -0.7em -0.7em',
-            marginTop: '-9px',
+            height: 'auto',
+            boxShadow: '#FFDDD2 -0.7em -0.7em'
         },
         badge: {
             margin: 3
@@ -32,7 +32,7 @@ export default function PortfolioList({ pieces }) {
                     disabled=true;
                 }
                 return(
-                <Grid item container md={9} xs ={11} key={piece.title} sx={{m: 3}}>
+                <Grid item container xs ={12} key={piece.title} sx={{m: 3}}>
                     {/* gif, title, summary take up one row */}
                     <Grid item xs={11} md={7}>
                         <video autoPlay loop muted playsInline src={piece.media} style ={styles.gif}></video>

@@ -11,30 +11,33 @@ import Typography from '@mui/material/Typography';
 
 export default function Portfolio() {
     return (
-        <Grid container item xs={12}>
+        <Grid container item xs={12} justifyContent={'center'}>
             <Grid container item xs={12} >
                 <Header />
             </Grid>
             <Grid item xs={12} >
                 <PortfolioHeader/>
+            </Grid>
 
-                {/* Expandable card with current projects */}
-                <Grid item container xs ={12} justifyContent={'center'} >
-                    <Grid item md={9} xs ={11} sx={{mt:'2.5%'}}>
-                        <CurrentWork/>
-                    </Grid>
+            {/* Expandable card with current projects */}
+            <Grid item container xs ={12} justifyContent={'center'} >
+                <Grid item md={9} xs ={11} sx={{mt:'2.5%'}}>
+                    <CurrentWork/>
                 </Grid>
+            </Grid>
 
-                {/* Completed pieces heading: */}
-                <Grid item container xs ={12} justifyContent={'center'} >
-                    <Grid item md={9} xs ={11} sx={{mt:'2.5%'}}>
-                    <Typography variant='h3' sx={{mb: '1%'}}>
-                        Completed Projects:
-                    </Typography>
-                        <Divider  sx={{bgcolor: 'accent.main', height: '0.2em', mb:'9px'}}/>
-                    </Grid>
+            {/* Completed pieces heading: */}
+            <Grid item container xs ={12} justifyContent={'center'} >
+                <Grid item md={9} xs ={11} sx={{mt:'2.5%'}}>
+                <Typography variant='h3' sx={{mb: '1%'}}>
+                    Completed Projects:
+                </Typography>
+                    <Divider  sx={{bgcolor: 'accent.main', height: '0.2em', mb:'9px'}}/>
                 </Grid>
-                {/* Completed pieces body */}
+            </Grid>
+
+            {/* Completed pieces body */}
+            <Grid item container md={9} xs ={11}>
                 <PortfolioList pieces={completedPieces}/>
             </Grid>
         </Grid>
