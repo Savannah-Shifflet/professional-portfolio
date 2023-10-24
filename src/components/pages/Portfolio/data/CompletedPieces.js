@@ -8,7 +8,7 @@ export const completedPieces = [
         media: sidekick,
         github: 'https://github.com/AlinaB108/pos-system-5000',
         deployed: 'https://sidekick-pos-a138f104c04c.herokuapp.com/pos',
-        summary: 'A restaurant POS application that utilizes a full MERN stack to drive efficient ordering and sales. To test it out, use the fake employee login ID: 1000',
+        summary: 'A restaurant POS application that utilizes a full MERN stack to drive efficient ordering and sales. To test it out, use the fake employee login ID: 1002',
         technology: [
             { source: 'https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge&logo=JavaScript&logoColor=black',
             alt: 'JavaScript'

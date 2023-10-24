@@ -66,7 +66,6 @@ const theme = createTheme({
                         "&:hover":{
                             background: 'rgba(226, 146, 99, 0.5)',
                         }
-                        
                     }
                 }
             ]
