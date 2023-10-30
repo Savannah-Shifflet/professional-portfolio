@@ -1,11 +1,15 @@
 import Blob from '../../../../assets/blob_mania.mp4';
 import DnD from '../../../../assets/DnD.mp4';
 import sidekick from '../../../../assets/sidekick.mp4';
+import BlobMobile from '../../../../assets/blob.png'
+import SidekickMobile from '../../../../assets/sidekick_mobile.png'
+import DndMobile from '../../../../assets/dnd_mobile.png'
 
 export const completedPieces = [
     {
         title: 'Sidekick',
         media: sidekick,
+        mobileMedia: SidekickMobile,
         github: 'https://github.com/AlinaB108/pos-system-5000',
         deployed: 'https://sidekick-pos-a138f104c04c.herokuapp.com/pos',
         summary: 'A restaurant POS application that utilizes a full MERN stack to drive efficient ordering and sales. To test it out, use the fake employee login ID: 1002',
@@ -45,6 +49,7 @@ export const completedPieces = [
     {
         title: 'Blob Mania',
         media: Blob,
+        mobileMedia: BlobMobile,
         github: 'https://github.com/Savannah-Shifflet/blob-mania',
         deployed: 'https://blob-mania-322037286e7b.herokuapp.com/',
         summary: 'A full-stack web-based multiplayer 2D shooter game with a retro aesthetic. The application is structured using the MVC paradigm and utilizes Node.js, sockets, and MySQL.',
@@ -88,6 +93,7 @@ export const completedPieces = [
     {
         title: 'Dungeons & Dragons: Quest for Glory!',
         media: DnD,
+        mobileMedia: DndMobile,
         github: 'https://github.com/BantaChristopher/DnD-quest-for-glory',
         deployed: 'https://bantachristopher.github.io/DnD-quest-for-glory/',
         summary: 'A front-end application that utilizes server-side APIs to randomize a creative D&D character and then generate a quest for that character with ChatGPT’s generative artificial intelligence.',
