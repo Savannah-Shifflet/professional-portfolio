@@ -37,7 +37,7 @@ export default function Portfolio() {
             </Grid>
 
             {/* Completed pieces body */}
-            <Grid item container md={9} xs ={11}>
+            <Grid item container md={9} xs ={11} justifyContent={'space-between'}>
                 <PortfolioList pieces={completedPieces}/>
             </Grid>
         </Grid>

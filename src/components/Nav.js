@@ -9,13 +9,13 @@ import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
 
 
-// TODO: add resume page as well 
+// TODO: add resume page as well
 
 export default function Nav() {
     //resize menu for smaller screens - useMediaQuery hook for conditional rendering
     const mobile = useMediaQuery('(max-width:900px)');
-    
-    // Menu 
+
+    // Menu
     const [anchorEl, setAnchorEl] = useState(null);
     const open = Boolean(anchorEl);
     const handleClick = (event) => {
@@ -24,12 +24,11 @@ export default function Nav() {
     const handleClose = () => {
         setAnchorEl(null);
     };
-    
 
     return (
         <Grid item height = '100vh' alignItems = 'center' sx = {{position: 'fixed', right: 12, display:'flex', zIndex: '2000'}} >
-            { 
-            mobile ? 
+            {
+            mobile ?
             (<Grid item sx={{alignSelf:'start'}}>
                 <Button
                     id="basic-button"
@@ -50,9 +49,9 @@ export default function Nav() {
                     'aria-labelledby': 'basic-button',
                     }}
                 >
-                    <MenuItem onClick={handleClose} ><Link variant='nav' sx={{m:0}} href="/about-me" >About Me</Link></MenuItem>
-                    <MenuItem onClick={handleClose}><Link variant='nav' sx={{m:0}} href="/portfolio" >Portfolio</Link></MenuItem>
-                    <MenuItem onClick={handleClose}><Link variant='nav' sx={{m:0}} target = "_blank" href={Pdf} >Resume</Link></MenuItem>
+                    <MenuItem onClick={handleClose} variant='nav' component={"a"} href={"/about-me"}>About Me</MenuItem>
+                    <MenuItem onClick={handleClose} component={"a"} href={"/portfolio"}>Portfolio</MenuItem>
+                    <MenuItem onClick={handleClose} component={"a"} target = "_blank" href={Pdf}>Resume</MenuItem>
                 </Menu>
             </Grid>)
             : (<Box sx = {{writingMode: 'vertical-rl', textOrientation: 'revert', transform: 'rotate(180deg)'}}>

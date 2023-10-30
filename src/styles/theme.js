@@ -1,8 +1,15 @@
-import { WrapText } from '@mui/icons-material';
 import {createTheme, responsiveFontSizes } from '@mui/material';
-import { hover } from '@testing-library/user-event/dist/hover';
 
 const theme = createTheme({
+    breakpoints: {
+        values: {
+            xs: 0,
+            sm: 600,
+            md: 900,
+            lg: 1200,
+            xl: 1920
+        }
+    },
     palette: {
         primary: {
             main: '#344E41'

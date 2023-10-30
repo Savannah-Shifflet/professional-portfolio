@@ -16,6 +16,9 @@ export const completedPieces = [
             { source: 'https://img.shields.io/badge/Node.js-339933.svg?style=for-the-badge&logo=nodedotjs&logoColor=white',
             alt: 'Node.Js'
             },
+            { source: 'https://img.shields.io/badge/Express-000000.svg?style=for-the-badge&logo=Express&logoColor=white',
+            alt: 'Express'
+            },
             { source: 'https://img.shields.io/badge/React-61DAFB.svg?style=for-the-badge&logo=React&logoColor=black',
             alt: 'React'
             },
@@ -51,6 +54,9 @@ export const completedPieces = [
             },
             { source: 'https://img.shields.io/badge/Node.js-339933.svg?style=for-the-badge&logo=nodedotjs&logoColor=white',
             alt: 'Node.Js'
+            },
+            { source: 'https://img.shields.io/badge/Express-000000.svg?style=for-the-badge&logo=Express&logoColor=white',
+            alt: 'Express'
             },
             { source: 'https://img.shields.io/badge/HTML5-E34F26.svg?style=for-the-badge&logo=HTML5&logoColor=white',
             alt: 'HTML'

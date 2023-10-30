@@ -8,7 +8,7 @@ export const currentPieces = [
         github: 'https://github.com/Savannah-Shifflet/prepify-mobile',
         deployed: '',
         disabled: true,
-        summary: `A mobile application that helps you track your adherence to Pre-exposure prophylaxis (or PrEP) using the evidence-based on-demand method. PrEP is a medication taken to prevent getting HIV.`,
+        summary: `A mobile application that helps you track your adherence to pre-exposure prophylaxis (or PrEP) using the evidence-based on-demand method. PrEP is a medication taken to prevent getting HIV.`,
         technology: [
             { source: 'https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB',
             alt: 'React Native'
@@ -22,17 +22,20 @@ export const currentPieces = [
             { source: 'https://img.shields.io/badge/Node.js-339933.svg?style=for-the-badge&logo=nodedotjs&logoColor=white',
             alt: 'Node.Js'
             },
-            { source: 'https://img.shields.io/badge/MongoDB-47A248.svg?style=for-the-badge&logo=MongoDB&logoColor=white',
-            alt: 'MongoDB'
+            { source: 'https://img.shields.io/badge/Express-000000.svg?style=for-the-badge&logo=Express&logoColor=white',
+            alt: 'Express'
             },
-            { source: 'https://img.shields.io/badge/Mongoose-880000.svg?style=for-the-badge&logo=Mongoose&logoColor=white',
-            alt: 'Mongoose'
+            { source: 'https://img.shields.io/badge/PostgreSQL-4169E1.svg?style=for-the-badge&logo=PostgreSQL&logoColor=white',
+            alt: 'Postgres'
+            },
+            { source: 'https://img.shields.io/badge/Sequelize-52B0E7.svg?style=for-the-badge&logo=Sequelize&logoColor=white',
+            alt: 'Sequelize'
             },
             { source: 'https://img.shields.io/badge/Apollo%20GraphQL-311C87.svg?style=for-the-badge&logo=Apollo-GraphQL&logoColor=white',
             alt: 'GraphQL'
             },
-            { source: 'https://img.shields.io/badge/JSON%20Web%20Tokens-000000.svg?style=for-the-badge&logo=JSON-Web-Tokens&logoColor=white',
-            alt: 'JSON Web Tokens'
+            { source: 'https://img.shields.io/badge/Firebase-FFCA28.svg?style=for-the-badge&logo=Firebase&logoColor=black',
+            alt: 'Firebase Auth'
             },
         ],
     },
