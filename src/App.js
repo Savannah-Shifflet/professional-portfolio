@@ -14,7 +14,7 @@ import { BrowserRouter } from 'react-router-dom';
 function App() {
     return(
         <BrowserRouter>
-            <Grid container sx={{minHeight: 'fit-content'}}>
+            <Grid container sx={{minHeight: '100vh'}}>
                 <Nav/>
                 <Grid item xs={12} lg={12}>
                     <Routes>
