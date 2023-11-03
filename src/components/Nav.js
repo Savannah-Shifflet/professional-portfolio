@@ -51,13 +51,13 @@ export default function Nav() {
                 >
                     <MenuItem onClick={handleClose} variant='nav' component={"a"} href={"/about-me"}>About Me</MenuItem>
                     <MenuItem onClick={handleClose} component={"a"} href={"/portfolio"}>Portfolio</MenuItem>
-                    <MenuItem onClick={handleClose} component={"a"} target = "_blank" href={Pdf}>Resume</MenuItem>
+                    <MenuItem onClick={handleClose} component={"a"} href={'/resume'}>Resume</MenuItem>
                 </Menu>
             </Grid>)
             : (<Box sx = {{writingMode: 'vertical-rl', textOrientation: 'revert', transform: 'rotate(180deg)'}}>
                 <Link variant='nav' href="/about-me" >About Me</Link>
                 <Link variant='nav' href="/portfolio" >Portfolio</Link>
-                <Link variant='nav' target = "_blank" href={Pdf} >Resume</Link>
+                <Link variant='nav' href={'/resume'} >Resume</Link>
             </Box>)
         }
     </Grid>

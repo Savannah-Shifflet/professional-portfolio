@@ -6,6 +6,7 @@ import {Routes, Route } from "react-router-dom";
 import Home from './components/pages/Home';
 import Portfolio from './components/pages/Portfolio'
 import About from './components/pages/About';
+import Resume from "./components/pages/Resume/index";
 
 import { Grid } from "@mui/material";
 import { BrowserRouter } from 'react-router-dom';
@@ -22,6 +23,7 @@ function App() {
                             <Route index element={<Home />} />
                             <Route path='about-me' element={<About />} />
                             <Route path='portfolio' element={<Portfolio />} />
+                            <Route path='resume' element={<Resume />} />
                         </Route>
                     </Routes>
                 </Grid>

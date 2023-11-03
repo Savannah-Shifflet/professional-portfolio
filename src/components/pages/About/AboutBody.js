@@ -6,6 +6,8 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Slide from '@mui/material/Slide';
 
+
+
 export default function AboutBody() {
     return (
         <Slide direction='up' in={true} timeout={{enter: 1000 }}>
@@ -38,6 +40,7 @@ export default function AboutBody() {
                 <Grid item container xs ={10} justifyContent={'center'} >
                     <History />
                 </Grid>
+                
             </Grid>
         </Slide>
     )
