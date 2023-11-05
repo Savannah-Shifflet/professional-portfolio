@@ -1,9 +1,8 @@
 import React from 'react';
 import Header from '../../Header';
 import Grid from '@mui/material/Grid';
-import Presence from './Presence';
-import Divider from '@mui/material/Divider';
 import Typography from '@mui/material/Typography';
+import Education from './Education';
 
 export default function Resume() {
     return (
@@ -16,17 +15,12 @@ export default function Resume() {
                     Education
                 </Typography>
             </Grid>
+            <Grid item container xs ={10} justifyContent={'center'} >
+                <Education />
+            </Grid>
             {/* <Grid item container xs ={10} justifyContent={'center'} >
                 <Divider sx={{bgcolor: 'accent.main', width: '100%'}} />
             </Grid> */}
-            <Grid item xs={10}>
-                <Typography variant='h3' sx={{ mt: '2.5%' }}>
-                    My Presence
-                </Typography>
-            </Grid>
-            <Grid item container xs ={10} justifyContent={'center'} >
-                <Presence />
-            </Grid>
         </Grid>
     )
 };

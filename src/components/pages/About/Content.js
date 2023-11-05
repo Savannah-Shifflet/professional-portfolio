@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Divider from '@mui/material/Divider';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Card from '@mui/material/Card';
@@ -7,7 +6,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import { CardActionArea } from '@mui/material';
 
-export default function Presence() {
+export default function Content() {
 
     const [blogs, setBlogs] = useState([])
 
