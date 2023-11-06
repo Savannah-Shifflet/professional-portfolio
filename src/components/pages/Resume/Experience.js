@@ -31,8 +31,7 @@ export default function Experience() {
         <Grid container item xs={12} sx={{ mt: '0.5%', backgroundColor: 'secondary.transparent', padding: '1rem', borderRadius: 5, }} >
             {experience.map((experience) => {
                 return(
-                    <>
-                    <Grid item container key={experience.title} xs={12} lg={6} sx ={{pt: '0.2em', pb: '1em', pr:'1.4em', height: 'fit-content'}}>
+                    <Grid item container key={experience.title} xs={12} lg={6} sx ={{pt: '0.2em', pb: '1em', pr:'1.4em', height: 'fit-content', zIndex: 2}}>
                         <Grid item xs={12}>
                             <Typography variant='h5' >{experience.title}</Typography>
                         </Grid>
@@ -43,8 +42,6 @@ export default function Experience() {
                             <Typography variant='body1'>{experience.time}</Typography>
                         </Grid>
                     </Grid>
-
-                    </>
                 )
             })}
         </Grid>

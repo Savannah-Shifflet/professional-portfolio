@@ -31,7 +31,7 @@ export default function Education() {
             {education.map((education) => {
                 return(
                     <>
-                    <Grid item container key={education.title} xs={12} xl={6} sx ={{pt: '0.2em', pb: '1em', pr:'1.4em', height: 'fit-content'}}>
+                    <Grid item container key={education.title} xs={12} xl={6} sx ={{pt: '0.2em', pb: '1em', pr:'1.4em', height: 'fit-content', zIndex: 2}}>
                         <Grid item xs={12}>
                             <Typography variant='h5' >{education.title} </Typography>
                         </Grid>
