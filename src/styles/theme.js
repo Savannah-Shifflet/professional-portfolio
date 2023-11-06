@@ -12,10 +12,12 @@ const theme = createTheme({
     },
     palette: {
         primary: {
-            main: '#344E41'
+            main: '#344E41',
+            transparent: 'rgba(52, 78, 65, 0.5)'
         },
         secondary: {
-            main: '#E29263'
+            main: '#E29263',
+            transparent: 'rgba(226, 146, 99, 0.5)'
         },
         accent: {
             main: '#9CA92E'
@@ -100,10 +102,16 @@ const theme = createTheme({
             fontSize: '3rem',
             fontFamily: 'exo'
         },
-        // Subtitles - 'my strengths'
+        // Subtitles for sections on page - ex: 'my strengths'
         h3: {
             fontFamily: 'exo',
             fontSize: '2rem'
+        },
+        // subtitles for individual list items - ex: job title in experience section
+        h5: {
+            fontFamily: 'nunito',
+            fontSize: '1.5rem',
+            fontWeight: 'bold'
         },
         body1: {
             fontFamily: 'nunito',

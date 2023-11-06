@@ -28,20 +28,21 @@ export default function Education() {
     ];
 
     return (
-        <Grid container item xs={12} sx={{ mt: '0.5%' }} >
+        <Grid container item xs={12} sx={{ mt: '0.5%', backgroundColor: 'secondary.transparent', padding: '1rem', borderRadius: 5, }} >
             {education.map((education) => {
                 return(
                     <>
-                    <Grid item container justifyContent={'space-between'} key={education.title} xs={12} lg={6} sx ={{pt: '0.2em', pb: '1em', pr:'1.4em'}}>
+                    <Grid item container key={education.title} xs={12} xl={6} sx ={{pt: '0.2em', pb: '1em', pr:'1.4em', height: 'fit-content'}}>
                         <Grid item xs={12}>
-                            <Typography variant='body1' >{education.title} {education.gpa? (`| GPA: ${education.gpa}`):null}{education.mcat? (`| MCAT: ${education.mcat}`):null}</Typography>
-                        </Grid>
-                        <Grid item xs={12}>
-                            <Typography variant='body1'>{education.time}</Typography>
+                            <Typography variant='h5' >{education.title} </Typography>
                         </Grid>
                         <Grid item xs={12}>
                             <Typography variant='body1'>{education.school}</Typography>
                         </Grid>
+                        <Grid item xs={12}>
+                            <Typography variant='body1'>{education.time}</Typography>
+                        </Grid>
+                        {education.gpa? (`GPA: ${education.gpa}`):null}{education.mcat? (` | MCAT: ${education.mcat}`):null}
                     </Grid>
 
                     </>

@@ -1,15 +1,13 @@
 import React from 'react';
-import Divider from '@mui/material/Divider';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
-
 
 export default function Experience() {
 
     const experience = [
         {
-            title: 'Business Analyst',
-            company: "McKinsey & Company, Digital and Analytics Practice",
+            title: 'Business Analyst, Digital and Analytics Practice',
+            company: "McKinsey & Company",
             time: "October 2022 – July 2023"
         },
         {
@@ -30,13 +28,13 @@ export default function Experience() {
     ];
 
     return (
-        <Grid container item xs={12} sx={{ mt: '0.5%' }} >
+        <Grid container item xs={12} sx={{ mt: '0.5%', backgroundColor: 'secondary.transparent', padding: '1rem', borderRadius: 5, }} >
             {experience.map((experience) => {
                 return(
                     <>
-                    <Grid item container justifyContent={'space-between'} key={experience.title} xs={12} lg={6} sx ={{pt: '0.2em', pb: '1em', pr:'1.4em'}}>
+                    <Grid item container key={experience.title} xs={12} lg={6} sx ={{pt: '0.2em', pb: '1em', pr:'1.4em', height: 'fit-content'}}>
                         <Grid item xs={12}>
-                            <Typography variant='body1' >{experience.title}</Typography>
+                            <Typography variant='h5' >{experience.title}</Typography>
                         </Grid>
                         <Grid item xs={12}>
                             <Typography variant='body1'>{experience.company}</Typography>
