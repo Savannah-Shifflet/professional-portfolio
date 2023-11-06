@@ -36,14 +36,12 @@ export default function AboutHeader() {
             <Fade in={true} timeout={700}>
                 <Grid item container justifyContent={'space-around'} xs={8} md={4.5}>
                         <Grid item container sx ={{height: '14rem', width: '15rem', position: 'relative', mr: '10%'}} justifyContent={'center'}>
-                            <Box sx={{bgcolor:'pink.main', position: 'absolute', bottom: '0', left: '200', width: '100%', height: '70%'}} md={12}>                        
+                            <Box sx={{bgcolor:'pink.main', position: 'absolute', bottom: '0', left: '200', width: '100%', height: '70%'}} md={12}>
                             </Box>
-                        
                             <img src = {headshot} alt ='Headshot of Savannah Shifflet' style={imgStyles.img} className='headshot'/>
-                        </Grid> 
+                        </Grid>
                 </Grid>
             </Fade>
-            
         </Grid>
     )
 }
