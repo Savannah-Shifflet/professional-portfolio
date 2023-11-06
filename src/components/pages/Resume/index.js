@@ -8,15 +8,7 @@ import pspo from '../../../assets/pspo_badge.png';
 import Link from '@mui/material/Link';
 import Honors from './Honors';
 import Decoration from './Decoration';
-import Fade from '@mui/material/Fade';
-import { TransitionGroup } from 'react-transition-group';
-import Grow from '@mui/material/Grow';
-import Zoom from '@mui/material/Zoom';
 import Slide from '@mui/material/Slide';
-
-
-
-
 
 
 export default function Resume() {
