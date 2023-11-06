@@ -28,7 +28,7 @@ export default function Resume() {
                 </Grid>
 
                 {/* Staggered fade of elements */}
-                <Slide in={true} timeout={2800}>
+                <Slide in={true} timeout={1800}>
                     <Grid item xs={12} xl={10} sx={{textAlign: 'center'}}>
                         <Typography variant='h2' >
                             Resume
@@ -38,7 +38,7 @@ export default function Resume() {
 
                 <Decoration  />
 
-                <Slide in={true} timeout={2400} >
+                <Slide in={true} timeout={1400} >
                     <Grid item xs={10} xl={8}>
                         <Typography variant='h3' sx={{ mt: '2.5%' }}>
                             Experience
@@ -46,13 +46,13 @@ export default function Resume() {
                     </Grid>
                 </Slide>
 
-                <Slide in={true} timeout={2200}>
+                <Slide in={true} timeout={1200}>
                     <Grid item container xs ={10} xl={8} justifyContent={'center'} >
                         <Experience />
                     </Grid>
                 </Slide>
 
-                <Slide in={true} timeout={2000}>
+                <Slide in={true} timeout={1300}>
                         <Grid item xs={10} xl={8}>
                             <Typography variant='h3' sx={{ mt: '2.5%' }}>
                                 Education
@@ -60,13 +60,13 @@ export default function Resume() {
                         </Grid>
                 </Slide>
 
-                <Slide in={true} timeout={1800}>
+                <Slide in={true} timeout={1100}>
                     <Grid item container xs ={10} xl={8} justifyContent={'center'} >
                         <Education />
                     </Grid>
                 </Slide>
 
-                <Slide in={true} timeout={1600}>
+                <Slide in={true} timeout={1200}>
                         <Grid item xs={10} xl={8}>
                             <Typography variant='h3' sx={{ mt: '2.5%' }}>
                                 Certifications
@@ -74,14 +74,14 @@ export default function Resume() {
                         </Grid>
                 </Slide>
 
-                <Slide in={true} timeout={1400}>
+                <Slide in={true} timeout={1200}>
                     <Grid item container xs ={10} xl={8} sx={{flexDirection: 'column', pt: '1%'}} >
                         <img src={pspo} alt='Professional Scrum Product Owner Badge' style={imgStyles.img}/>
                         <Link target = "_blank" href="https://www.credly.com/badges/2d4e3419-98d7-45e6-857a-eec8fb263fef/public_url" >Professional Scrum Product Owner</Link>
                     </Grid>
                 </Slide>
 
-                <Slide in={true} timeout={1200}>
+                <Slide in={true} timeout={1000}>
                         <Grid item xs={10} xl={8}>
                             <Typography variant='h3' sx={{ mt: '2.5%' }}>
                                 Honors
@@ -89,7 +89,7 @@ export default function Resume() {
                         </Grid>
                 </Slide>
 
-                <Slide in={true} timeout={1000}>
+                <Slide in={true} timeout={800}>
                     <Grid item container xs ={10} xl={8} justifyContent={'center'} >
                         <Honors />
                     </Grid>
