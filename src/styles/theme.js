@@ -90,7 +90,7 @@ const theme = createTheme({
             lineHeight: 1
         },
         // for Savannah Shifflet header on pages
-        h4: {
+        h2: {
             fontFamily:  [ '"Overpass"', 'sans-serif'].join(','),
             fontSize: '2rem',
             fontWeight: 'bold',
@@ -98,12 +98,12 @@ const theme = createTheme({
             lineHeight: 1
         },
         // for page headers
-        h2: {
+        h3: {
             fontSize: '3rem',
             fontFamily: 'exo'
         },
         // Subtitles for sections on page - ex: 'my strengths'
-        h3: {
+        h4: {
             fontFamily: 'exo',
             fontSize: '2rem'
         },

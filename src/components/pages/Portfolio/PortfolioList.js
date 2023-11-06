@@ -48,7 +48,7 @@ export default function PortfolioList({ pieces }) {
 
                     <Grid container item xs = {11} md={5}  justifyContent='flex-end'>
                         <Grid item xs={11} sx={{height: 'fit-content'}}>
-                            <Typography variant ='h3' sx={{textAlign: 'right'}}>{piece.title}</Typography>
+                            <Typography variant ='h4' sx={{textAlign: 'right'}}>{piece.title}</Typography>
                         </Grid>
                         <Grid item xs={11}>
                             <Typography variant ='body1'>{piece.summary}</Typography>

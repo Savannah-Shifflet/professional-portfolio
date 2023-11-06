@@ -15,7 +15,7 @@ export default function CurrentWork() {
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon  sx = {{color: 'background.default'}}/>}
                     sx={{bgcolor: 'accent.main', color: 'background.default', fontFamily: 'exo'}}>
-                    <Typography variant= 'h3'>Projects in progress</Typography>
+                    <Typography variant= 'h4'>Projects in progress</Typography>
                 </AccordionSummary>
                 <AccordionDetails sx= {{bgcolor: 'background.default'}}>
                     <Grid item xs={12}>

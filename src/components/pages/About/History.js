@@ -13,7 +13,7 @@ export default function History() {
             <AccordionSummary
                 expandIcon={<ExpandMoreIcon  sx = {{color: 'background.default'}}/>}
                 sx={{bgcolor: 'secondary.main', color: 'background.default', fontFamily: 'exo'}} >
-                <Typography variant= 'h3'>A Brief History</Typography>
+                <Typography variant= 'h4'>A Brief History</Typography>
             </AccordionSummary>
             <AccordionDetails sx= {{bgcolor: 'secondary.main'}}>
                 <Typography variant='body1' sx={{color: 'background.default'}}>

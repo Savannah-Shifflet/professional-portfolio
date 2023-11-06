@@ -30,7 +30,7 @@ export default function Resume() {
                 {/* Staggered fade of elements */}
                 <Slide in={true} timeout={1800}>
                     <Grid item xs={12} xl={10} sx={{textAlign: 'center'}}>
-                        <Typography variant='h2' >
+                        <Typography variant='h3' >
                             Resume
                         </Typography>
                     </Grid>
@@ -40,7 +40,7 @@ export default function Resume() {
 
                 <Slide in={true} timeout={1400} >
                     <Grid item xs={10} xl={8}>
-                        <Typography variant='h3' sx={{ mt: '2.5%' }}>
+                        <Typography variant='h4' sx={{ mt: '2.5%' }}>
                             Experience
                         </Typography>
                     </Grid>
@@ -54,7 +54,7 @@ export default function Resume() {
 
                 <Slide in={true} timeout={1300}>
                         <Grid item xs={10} xl={8}>
-                            <Typography variant='h3' sx={{ mt: '2.5%' }}>
+                            <Typography variant='h4' sx={{ mt: '2.5%' }}>
                                 Education
                             </Typography>
                         </Grid>
@@ -68,7 +68,7 @@ export default function Resume() {
 
                 <Slide in={true} timeout={1200}>
                         <Grid item xs={10} xl={8}>
-                            <Typography variant='h3' sx={{ mt: '2.5%' }}>
+                            <Typography variant='h4' sx={{ mt: '2.5%' }}>
                                 Certifications
                             </Typography>
                         </Grid>
@@ -83,7 +83,7 @@ export default function Resume() {
 
                 <Slide in={true} timeout={1000}>
                         <Grid item xs={10} xl={8}>
-                            <Typography variant='h3' sx={{ mt: '2.5%' }}>
+                            <Typography variant='h4' sx={{ mt: '2.5%' }}>
                                 Honors
                             </Typography>
                         </Grid>

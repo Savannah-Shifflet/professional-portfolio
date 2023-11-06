@@ -26,7 +26,7 @@ export default function AboutHeader() {
                     <Grid item xs={10}>
                         <Box sx = {{bgcolor: 'primary.main', borderRadius: '0 110px 110px 0', py:'2rem', display: 'flex'}} justifyContent='flex-end' alignItems='center' >
                             <Grid item xs={8} sm={5}>
-                                <Typography sx = {{color: 'background.default', fontFamily: 'Exo', mr:'60px' }}  variant='h2'  >About Me</Typography>
+                                <Typography sx = {{color: 'background.default', fontFamily: 'Exo', mr:'60px' }}  variant='h3'  >About Me</Typography>
                             </Grid>
                         </Box>
                     </Grid>

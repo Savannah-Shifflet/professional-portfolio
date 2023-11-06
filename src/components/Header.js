@@ -8,7 +8,7 @@ export default function Home() {
             <Grid item container xs={12}>
                 <Grid item xs={12}>
                     <Grid item sx={{ bgcolor:'secondary.main', px:1, pt: 0.7, mt: 2.5, ml: 3, mb: 4, width: 'fit-content', zIndex: '200', boxShadow: '#9CA92E -0.3em 0.3em' }}>
-                        <Link variant = 'header' href = "/"><Typography noWrap variant = 'h4' >SAVANNAH SHIFFLET</Typography></Link>
+                        <Link variant = 'header' href = "/"><Typography noWrap variant = 'h2' >SAVANNAH SHIFFLET</Typography></Link>
                     </Grid>
                 </Grid>
             </Grid>

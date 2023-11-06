@@ -13,7 +13,7 @@ export default function AboutBody() {
         <Slide direction='up' in={true} timeout={{enter: 1000 }}>
             <Grid container justifyContent='center'>
                 <Grid item xs={10}>
-                    <Typography variant='h3' sx={{ mt: '2.5%' }}>
+                    <Typography variant='h4' sx={{ mt: '2.5%' }}>
                         My passion: bridging science and logic with real-world complexities
                     </Typography>
                     <Grid item container xs={12}>
@@ -30,7 +30,7 @@ export default function AboutBody() {
                     </Grid>
                 </Grid>
                 <Grid item xs={10}>
-                    <Typography variant='h3' sx={{ mt: '2.5%' }}>
+                    <Typography variant='h4' sx={{ mt: '2.5%' }}>
                         My Strengths
                     </Typography>
                 </Grid>
@@ -41,7 +41,7 @@ export default function AboutBody() {
                     <History />
                 </Grid>
                 <Grid item xs={10}>
-                    <Typography variant='h3' sx={{ mt: '2.5%' }}>
+                    <Typography variant='h4' sx={{ mt: '2.5%' }}>
                         Content
                     </Typography>
                 </Grid>
