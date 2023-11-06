@@ -19,14 +19,13 @@ export default function Content() {
         })
     }, [])
 
-  console.log(blogs)
     return (
         <Grid container item xs={12} sx={{ mt: '0.5%' }} justifyContent={'space-between'}>
             {blogs.map((blog) => {
                 return(
                     <Grid item key={blog.title} xs={12} md={5} sx ={{pt: '0.2em', pb: '1em', pr:'1.4em'}}>
                     <Card>
-                        <CardActionArea href={blog.link} target="_blank" rel="noopener noreferrer">
+                        <CardActionArea href={blog.link} aria-label={`Link to ${blog.title} medium article`} target="_blank" rel="noopener noreferrer">
                         <CardMedia
                             sx={{height: 150}}
                             image={blog.thumbnail}

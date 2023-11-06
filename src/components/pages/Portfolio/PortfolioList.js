@@ -69,14 +69,14 @@ export default function PortfolioList({ pieces }) {
                     {/* Links to the piece's github and deployed project are second row */}
                     <Grid item container xs ={11} md={12}sx={{my:2}} justifyContent='space-between'>
                         <Grid container item xs ={5} md={6} justifyContent='center'>
-                            <Button target = "_blank" href={piece.github} variant="project" sx={{textAlign: 'center'}}>GitHub Repository</Button>
+                            <Button target = "_blank" href={piece.github} aria-label='Link to GitHub repo for project' variant="project" sx={{textAlign: 'center'}}>GitHub Repository</Button>
                         </Grid>
                         <Grid container item xs ={5} md={6} justifyContent='center'>
-                            {disabled?<Button variant='project' target = "_blank" href={piece.deployed} disabled sx={{textAlign: 'center'}}>Coming soon...</Button>: <Button variant='project' target = "_blank" href={piece.deployed} sx={{textAlign: 'center'}}>Deployed Project</Button>
+                            {disabled?<Button variant='project' target = "_blank" href={piece.deployed} disabled sx={{textAlign: 'center'}}>Coming soon...</Button>: <Button variant='project' target = "_blank" href={piece.deployed} aria-label='Link to deployed project' sx={{textAlign: 'center'}}>Deployed Project</Button>
                             }
                         </Grid>
                     </Grid>
-                    
+
                     <Grid item xs ={12} sx={{mt:'2.5%'}}>
                         { !isLast ? (<Divider  sx={{bgcolor: 'accent.main', height: '0.2em'}}/>) : (<div></div>)}
                     </Grid>

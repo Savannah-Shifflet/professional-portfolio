@@ -22,17 +22,17 @@ export default function Footer() {
 
     return (
         <Box sx = {{mt: '1%'}}>
-            <IconButton sx={{m:1}} target='_blank' rel='noreferrer' href = 'https://www.linkedin.com/in/savannah-shifflet/'>
+            <IconButton sx={{m:1}} target='_blank' rel='noreferrer' href = 'https://www.linkedin.com/in/savannah-shifflet/' aria-label="Link to Savannah Shifflet's LinkedIn">
                 <LinkedInIcon color='primary'/>
             </IconButton>
 
-            <IconButton sx={{m:1}} target='_blank' rel='noreferrer' href = 'https://github.com/Savannah-Shifflet'>
+            <IconButton sx={{m:1}} target='_blank' rel='noreferrer' href = 'https://github.com/Savannah-Shifflet' aria-label="Link to Savannah Shifflet's GitHub" >
                 <GitHubIcon color='primary'/>
             </IconButton>
 
-            {/* TODO: add copy email functionality with snackbar notification or tooltip that email copied */}
+            {/* tooltip that email copied */}
             <ClickAwayListener onClickAway={handleTooltipClose}>
-                    <Tooltip 
+                    <Tooltip
                         componentsProps={{
                             tooltip: {
                                 sx: {bgcolor: 'accent.main', color: 'primary.main', fontWeight: 'bold'}
@@ -48,7 +48,7 @@ export default function Footer() {
                         disableTouchListener
                         title = "Copied to clipboard!" 
                         arrow>
-                        <IconButton sx={{m:1}} onClick={handleTooltipOpen}>
+                        <IconButton sx={{m:1}} onClick={handleTooltipOpen} aria-label="Click to copy Savannah Shifflet's email" >
                             <EmailIcon color='primary'/>
                         </IconButton>
                     </Tooltip>
