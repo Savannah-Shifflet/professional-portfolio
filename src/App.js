@@ -6,7 +6,7 @@ import {Routes, Route } from "react-router-dom";
 import Home from './components/pages/Home';
 import Portfolio from './components/pages/Portfolio'
 import About from './components/pages/About';
-import Resume from "./components/pages/Resume/index";
+import Resume from './components/pages/Resume'
 
 import { Grid } from "@mui/material";
 import { BrowserRouter } from 'react-router-dom';
