@@ -24,8 +24,8 @@ export default function Content() {
             {blogs.map((blog) => {
                 return(
                     <Grid item key={blog.title} xs={12} md={5} sx ={{pt: '0.2em', pb: '1em', pr:'1.4em'}}>
-                    <Card>
-                        <CardActionArea href={blog.link} aria-label={`Link to ${blog.title} medium article`} target="_blank" rel="noopener noreferrer">
+                    <Card sx = {{height: '100%'}}>
+                        <CardActionArea href={blog.link} aria-label={`Link to ${blog.title} medium article`} target="_blank" rel="noopener noreferrer" sx={{height:'100%'}}>
                         <CardMedia
                             sx={{height: 150}}
                             image={blog.thumbnail}
